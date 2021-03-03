@@ -10,8 +10,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 70% 20%;
-    border: 2px solid black;
-    border-radius: 15px;
     margin: 2% 2%;
 }
 
@@ -33,7 +31,8 @@ body {
     color: white;
     background-color: grey;
     border: 4px solid gray ;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* main */
@@ -113,6 +112,24 @@ body {
 
 .footer{
     grid-area: 3 / 1 / span 1 / span 3;
+    background-color: white;
+}
+
+.footer_container{
+    color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    
 }
 
 /* pokemon icon */ 
