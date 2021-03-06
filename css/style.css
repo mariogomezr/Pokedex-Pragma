@@ -171,19 +171,19 @@ body {
 }
 
 .mewtwo{
-    background: white url(media/mewtwo.png) no-repeat center;
+    background: white url(../media/mewtwo.png) no-repeat center;
     background-size: contain;
 }
 .pikachu{
-    background: white url(media/pikachu.png) no-repeat center;
+    background: white url(../media/pikachu.png) no-repeat center;
     background-size: contain;
 }
 .serperior{
-    background: white url(media/serperior.png) no-repeat center;
+    background: white url(../media/serperior.png) no-repeat center;
     background-size: contain;
 }
 .vulpix{
-    background: white url(media/vulpix.png) no-repeat center;
+    background: white url(../media/vulpix.png) no-repeat center;
     background-size: contain;
 }
 
