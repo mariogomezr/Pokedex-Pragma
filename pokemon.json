@@ -1,0 +1,11 @@
+{
+  "nombre": "Charizard",
+  "atributos": {
+    "numero": "006",
+    "level": "100",
+    "type": "Fire",
+    "hability": "Flames",
+    "height": "1.7 m",
+    "weight": "90.5 Kg"
+  }
+}

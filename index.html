@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://css.gg/pokemon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="/media/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Pokedex_</title>
   </head>
 
@@ -18,38 +18,38 @@
     <main class="main_container">
       <div class="name_container">
         <div class="title_pok">
-          <img src="media/fire.jpg" alt="fire element" />
-          <h2>CHARIZARD</h2>
+          <span class="name_container__span-iconoFuego"></span>
+          <h2 id="nombre-pokemon">.</h2>
         </div>
         <div class="img_pok">
-          <img src="media/charizard.png" alt="charizard" />
+          <span class="img_pok-charizar"></span>
         </div>
       </div>
 
       <div class="attributes_container">
         <div class="attribute">
           <h3>No.</h3>
-          <p>006</p>
+          <p id="numero-pokemon">.</p>
         </div>
         <div class="attribute">
           <h3>Level</h3>
-          <p>100</p>
+          <p id="nivel-pokemon">.</p>
         </div>
         <div class="attribute">
           <h3>TYPE</h3>
-          <p>FIRE</p>
+          <p id="type-pokemon">.</p>
         </div>
         <div class="attribute">
           <h3>HABILITY</h3>
-          <p>FLAMES</p>
+          <p id="hability-pokemon">.</p>
         </div>
         <div class="attribute">
           <h3>HEIGHT</h3>
-          <p>1.7 m</p>
+          <p id="height-pokemon">.</p>
         </div>
         <div class="attribute">
           <h3>WEIGHT</h3>
-          <p>90.5 Kg</p>
+          <p id="weight-pokemon">.</p>
         </div>
       </div>
     </main>
@@ -62,5 +62,6 @@
         <button class="button vulpix"></button>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

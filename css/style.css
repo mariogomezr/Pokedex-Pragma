@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: lightgrey;
+    background-color: rgb(211, 208, 208);
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,178 +15,30 @@ body {
         "main main"
         "footer footer";
     margin: 2% 2%;
+    min-height: 1200px;
 }
 
 
 /* header */
 
-.header h1{
-    display: inline-block;
-}
 
 .header i{
     margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
-.header{
+.header {
     grid-area: header;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: white;
     background-color: grey;
     border: 4px solid gray ;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-}
-
-
-/* main */
-
-.main_container{
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 3fr);
-    grid-template-areas:
-        "name_container attributes_container"
-        "name_container attributes_container"
-        "name_container attributes_container" ;
-    max-height: 1200px;
-}
-
-
-
-/* name container */
-.name_container{
-    grid-area: name_container;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 7fr;
-    /*border: 5px solid black;
-    border-radius: 15px; */
-    margin: 7.5%;
-}
-
-
-
-.title_pok{
-    grid-area: 1 / 1 / span 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    font-size: 2rem;
-}
-
-.title_pok img{
-    max-height: 3rem;
-    max-width: 3rem;
-    margin-right: 10px;
-}
-
-
-.img_pok{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.img_pok img{
-    width: 100%;
-    height: auto;
-}
-
-/* attributes container */
-.attributes_container{
-    grid-area: attributes_container;
-    margin: 7.5%;
-    border-radius: 15px;
-    background-color: white;
-    color: grey;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    font-size: 22px;
-}
-
-.attribute{
-    align-self: center;
-    justify-self: center;
-}
-
-.attribute p{
     font-size: 1.5rem;
 }
-
-.attribute *{
-    margin: 10px;
-}
-
-
-/* footer */
-
-.footer{
-    grid-area: footer;
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: grey;
-    font-size: 1.6rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-        "other button button button button"
-    ;
-}
-
-.other_container{
-    grid-area: other;
-    justify-self: center;
-    align-self: center;
-}
-
-.button_container{
-    grid-area: button;
-    max-height: inherit;
-    max-width: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.button{
-    max-height: 250px;
-    max-width: 250px;
-    height: 200px;
-    width: 200px;
-    border: 2px solid grey;
-    border-radius: 15px;
-}
-
-.mewtwo{
-    background: white url(../media/mewtwo.png) no-repeat center;
-    background-size: contain;
-}
-.pikachu{
-    background: white url(../media/pikachu.png) no-repeat center;
-    background-size: contain;
-}
-.serperior{
-    background: white url(../media/serperior.png) no-repeat center;
-    background-size: contain;
-}
-.vulpix{
-    background: white url(../media/vulpix.png) no-repeat center;
-    background-size: contain;
-}
-
 
 /* pokemon icon */ 
 
@@ -216,6 +68,172 @@ body {
     top: 3px
 }
 
+/* main */
+
+.main_container{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas:
+        "name_container attributes_container"
+        "name_container attributes_container"
+        "name_container attributes_container" ;
+    background-color: rgb(194, 193, 193);
+}
+
+
+
+/* name container */
+.name_container{
+    grid-area: name_container;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
+    /*border: 5px solid black;
+    border-radius: 15px; */
+    margin: 7.5%;
+}
+
+
+
+.title_pok{
+    grid-area: 1 / 1 / span 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+.name_container__span-iconoFuego{
+    height: 50px;
+    width: 50px;
+    background: url(../media/fire.png) no-repeat center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.title_pok img{
+    max-height: 3rem;
+    max-width: 3rem;
+    margin-right: 10px;
+}
+
+
+.img_pok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img_pok-charizar{
+    background: url(../media/charizard.png) no-repeat center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.img_pok img{
+    width: 100%;
+    height: ;
+}
+
+/* attributes container */
+.attributes_container{
+    grid-area: attributes_container;
+    margin: 7.5%;
+    border-radius: 15px;
+    background-color: white;
+    color: fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.75rem;
+}
+
+.attribute{
+    align-self: center;
+    justify-self: center;
+}
+
+.attribute p{
+    font-size: 1.75rem;
+}
+
+.attribute *{
+    margin: 10px;
+}
+
+
+/* footer */
+
+.footer{
+    grid-area: footer;
+    background-color: grey;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: fff;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "other button button button button"
+    ;
+}
+
+.other_container{
+    grid-area: other;
+    justify-self: center;
+    align-self: center;
+}
+
+.button_container{
+    grid-area: button;
+    max-height: inherit;
+    max-width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.button{
+    max-height: 250px;
+    max-width: 250px;
+    height: 80%;
+    width: 22.5%;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+.mewtwo{
+    background: white url(../media/mewtwo.png) no-repeat center;
+    background-size: contain;
+}
+.pikachu{
+    background: white url(../media/pikachu.png) no-repeat center;
+    background-size: contain;
+}
+.serperior{
+    background: white url(../media/serperior.png) no-repeat center;
+    background-size: contain;
+}
+.vulpix{
+    background: white url(../media/vulpix.png) no-repeat center;
+    background-size: contain;
+}
+.button:hover{
+    opacity: 0.5;
+    transition: 0.10s ease-out;
+}
+
+
 @media only screen and (max-width: 750px){
     
     body {
@@ -228,7 +246,6 @@ body {
             "header"
             "main"
             "footer";
-            grid-gap: 20px;
     }
 
     .header{
@@ -265,26 +282,27 @@ body {
     
     .other_container{
         grid-area: other;
+        color: white;
+    }
+
+    .other_container h3{
+        margin-top: 5px;
     }
 
     .button_container{
         grid-area: button_container;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-            "mewtwo pikachu"
-            "sera vulpix";
+            "mewtwo pikachu sera vulpix";
+        justify-items: center;
         
     }
 
-    .mewtwo, .serperior{
-
-        justify-self: flex-end;
+    .button{
+        width: 80%;
+        height: 70%;
     }
 
-    .button {
-        max-width: px;
-    }
+
 }
